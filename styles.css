@@ -1,24 +1,131 @@
 :root {
-    /* ******Colors sections******* */
-    --sunyellow-color:#F5C044;
-    --green-color: #4CA154;
-    --black-color: #18181B;
-    --grey-color: #52525A;
-    --lightgray-color: #D4D4D8;
-    --offwhite-color: #FAFAF9;
-    --white-color: #FFFFFF;
-    
-    /* ********Font Sizes*********** */
-    --heading: 2.25rem;
-    --body1: 1.25rem;
-    --bod2: 1rem;
-    --listitems: .875rem;
-  }
-  *,
-  ::before,
-  ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Lato";
-  }
+  /* Colors */
+  --sunyellow-color: #F5C044;
+  --green-color: #4CA154;
+  --black-color: #18181B;
+  --grey-color: #52525A;
+  --lightgray-color: #D4D4D8;
+  --offwhite-color: #FAFAF9;
+  --white-color: #FFFFFF;
+
+  /* Font Sizes */
+  --heading: 2.25rem;
+  --body1: 1.25rem;
+  --body2: 1rem;
+  --listitems: .875rem;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  font-size: var(--heading);
+}
+
+p {
+  font-size: var(--body1);
+}
+
+section {
+  width: 100%;
+  background-color: var(--lightgray-color);
+}
+
+article {
+  width: 50%;
+  float: left;
+  padding: 3rem;
+  /* border: 1px solid navy; */
+}
+
+article div {
+  padding: .5rem;
+}
+
+article .star
+{
+  width: 10%;
+}
+
+article img,
+article h1,
+article p {
+  padding: .5rem;
+}
+
+article > div > p {
+  opacity: .7;
+  line-height: 2rem;
+}
+
+div > ul > li {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div > ul > li > p {
+  padding-left: .7rem;
+  font-size: var(--listitems);
+  color: var(--grey-color);
+}
+/* waste parts */
+
+
+
+
+/* images parts */
+.google, .meta{
+  width: 30%;
+}
+.top-right, .bottom-left{
+  border: 1px solid white;
+  border-radius: 1rem;
+  width: 50%;
+  box-shadow: 5px 6px 56px 20px rgba(0,0,0,0.1);
+  /* background-color: #D4D4D8; */
+  
+  
+}
+.top-right{
+  margin-left:15rem;
+}
+.bottom-left{
+  float: left;
+}
+.google-review, .meta-review{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+.user-review{
+  padding: 0rem 1rem 1rem 1rem;
+}
+.user-review h4{
+  margin-bottom: .5rem;
+  font-size: var(--body2);
+  
+}
+.user-review span{
+  font-size: var(--body2);
+  color: var(--grey-color);
+}
+.right-sec{
+  display: flex;
+  flex-direction: column;
+}
+
+.right-sec .top-right,.bottom-left{
+  margin-top: 3rem;
+  
+}
